@@ -58,6 +58,18 @@ a {
 	margin-bottom: 4%;
 }
 
+.botao-login-google {
+	width: 84%;
+	margin: auto;
+	color: #000000;
+	--background:	#ffffff;
+	--border-radius: 10px;
+	text-transform: capitalize;
+	font-size: 17px;
+	font-weight: 700;
+	margin-bottom: 4%;
+}
+
 .botao-cadastro {
 	width: 54%;
 	margin: auto;
@@ -91,10 +103,7 @@ h2 {
 	--padding-start: 4%;
 }
 
-.rodape{
-	font-weight: 400;
-	font-size: 12px;
-	color: #ffffff;
-	text-align: center;
-	margin-top: 50%;
+
+.conteiner-cadastro{
+	padding-top: 1cm;
 }

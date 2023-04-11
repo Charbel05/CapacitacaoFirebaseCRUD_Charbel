@@ -5,8 +5,8 @@
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
+
 <ion-content [fullscreen]="true" class="content-basico">
-  <div class="container-login">
     <h2 class="container-user">Usuários</h2>
 
     <div *ngIf="segmentChange == 'visualizar'">
@@ -16,12 +16,33 @@
           <ion-label><b>CPF</b></ion-label>
         </ion-item>
         <ion-item
-          *ngFor="let user of userVetor; let i=index">
+          *ngFor="let user of userVetor; let i=index"
+          >
           <ion-label>{{user.nome}}</ion-label>
           <ion-label>{{user.cpf}}</ion-label>
+          <ion-button (click)="showInfo(user)"> <ion-icon name="eye-outline"></ion-icon> </ion-button>
+          <ion-button (click)="edit(user)"> <ion-icon name="pencil-outline"></ion-icon> </ion-button>
+          <ion-button class="botao-excluir" (click)="delete(user)"> <ion-icon name="trash"></ion-icon> </ion-button>
+          <div>
+            <ion-card class="card" *ngIf="user.info == true">
+              <ion-card-content class="content-card">
+                Nome: {{user.nome}} <br>
+                CPF: {{user.cpf}} <br>
+                Cidade: {{user.cidade}} <br>
+                Email: {{user.email}}
+              </ion-card-content>
+              <ion-button class="botao-card" (click)="verificaCEP(user.cep)"> Conferir CEP</ion-button>
+              <ion-button class="botao-card" (click)="showInfo(user)"> OK </ion-button>
+            </ion-card>
+          </div>
         </ion-item>
       </ion-list>
     </div>
 
-  </div>
+    <div class="botao-add">
+      <ion-button (click)="add()">
+        <ion-icon name="add-circle-outline"></ion-icon>
+      </ion-button>
+    </div>
+    
 </ion-content>

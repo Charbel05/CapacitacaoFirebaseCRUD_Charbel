@@ -6,4 +6,5 @@ export interface User {
   endereco: string;
   cep: string;
   email: string;
+  info: boolean;
 }

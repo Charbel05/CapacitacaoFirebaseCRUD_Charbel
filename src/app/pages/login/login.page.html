@@ -1,21 +1,25 @@
 <ion-content [fullscreen]="true" class="content-basico">
-
-
 	<div class="container-login">
-	  <h1 class="titulo-login-cad">Login</h1>
-	  <ion-input [(ngModel)]="email" class="input-login-cad input-login" placeholder="Email">
-		<ion-icon class="icon-login-cad input-login" name="mail" slot="start"></ion-icon>
-	  </ion-input>
-	  <ion-input [(ngModel)]="senha" class="input-login-cad input-login" placeholder="Senha" type="password">
-		<ion-icon class="icon-login-cad" name="key" slot="start"></ion-icon>
-	  </ion-input>
+		<h1 class="titulo-login-cad">Login</h1>
+		<ion-input [(ngModel)]="email" class="input-login-cad input-login" placeholder="Email">
+			<ion-icon class="icon-login-cad input-login" name="mail" slot="start"></ion-icon>
+		</ion-input>
+		<ion-input [(ngModel)]="senha" class="input-login-cad input-login" placeholder="Senha" type="password">
+			<ion-icon class="icon-login-cad" name="key" slot="start"></ion-icon>
+		</ion-input>
 	</div>
+	
 	<div class="link">
-	  <a (click)="redefinir()">Esqueci minha senha!</a>
+		<a (click)="redefinir()">Esqueci minha senha!</a>
 	</div>
+	
 	<div class="container-botao">
-	  <ion-button class="botao-login" expand="block" (click)="realizarLogin()">Login</ion-button>
+		<ion-button class="botao-login" expand="block" (click)="realizarLogin()">Login</ion-button>
 	</div>
-  <p class="p-cadastro">Ainda não possui cadastro?</p>
-	<ion-button  class="botao-cadastro" expand="block" (click)="irParaCadastro()">Cadastre-se</ion-button>
-  </ion-content>
+	
+	<div class="conteiner-cadastro">
+		<p class="p-cadastro">Ainda não possui cadastro?</p>
+		<ion-button  class="botao-cadastro" expand="block" (click)="irParaCadastro()">Cadastre-se</ion-button>
+	</div>
+
+</ion-content>

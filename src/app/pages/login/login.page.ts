@@ -21,7 +21,7 @@ export class LoginPage implements OnInit {
 		private afAuth: AngularFireAuth,
 		private fireService: FirebaseService,
 		private loadingCtrl: LoadingController,
-		private navService: NavegacaoService
+		private navService: NavegacaoService,
 	) {}
 
 	ngOnInit() {}
@@ -78,7 +78,9 @@ export class LoginPage implements OnInit {
 	navegarPara(nomeDaRota: string) {
 		this.navService.navegarPara(nomeDaRota);
 	}
+
 	irParaCadastro(){
 		this.navService.navegarPara('cadastro')
 	}
+
 }

@@ -25,7 +25,7 @@
     "@capacitor/storage": "^1.2.5",
     "@ionic/angular": "^6.1.9",
     "capacitor": "^0.5.5",
-    "firebase": "^9.17.1",
+    "firebase": "^9.18.0",
     "ionicons": "^6.0.3",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",

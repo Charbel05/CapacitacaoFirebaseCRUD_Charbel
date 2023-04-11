@@ -1,5 +1,6 @@
 .container-user {
   margin-left: 1rem;
+  text-align: center;
 }
 
 .div-info {
@@ -22,7 +23,25 @@
 
 }
 
-.segment-button:active {
-  background-color: #002fff;
+.ion-no-border{
+  --ion-background-color: #ffffff;
 }
 
+.content-basico{
+  --ion-background-color: #4322ff;
+}
+
+.botao-add{
+  position: absolute;
+  right: 0;
+}
+
+.botao-excluir{
+  color: red;
+}
+
+.card{
+  background-color: black;
+  color: #ffffff;
+  width: 10cm;
+}
